@@ -1,3 +1,0 @@
-Name: tejpal Darro
-Education: Bhilai Institute Of Technology
-Last year project: Disaster managment system using python and flask
