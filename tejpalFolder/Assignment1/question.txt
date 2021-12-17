@@ -1,24 +1,130 @@
--What does git satus do?
--The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. Status output does not show you any information regarding the committed project history
+Que.What does git satus do?
+-The git status command displays the state of the working directory and the staging area.
+ It lets you see which changes have been staged, which haven't, and which files aren't
+ being tracked by Git. Status output does not show you any information regarding the
+ committed project history
+------------------------------------------------------------------------------------------
 
--What does git log do?
--The git log command shows a list of all the commits made to a repository. You can see the hash of each Git commit, the message associated with each commit, and more metadata. This command is useful for displaying the history of a repository.
+Que.What does git log do?
+-The git log command shows a list of all the commits made to a repository. You can see the
+ hash of each Git commit, the message associated with each commit, and more metadata. This
+ command is useful for displaying the history of a repository.
+------------------------------------------------------------------------------------------
 
--what does git add do?
--The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit.
+Que.what does git add do?
+-The git add command adds a change in the working directory to the staging area. It tells
+ Git that you want to include updates to a particular file in the next commit.
+------------------------------------------------------------------------------------------
 
--What does git commit do?
--Adding commits keep track of our progress and changes as we work. ... Git considers each commit change point or "save point". It is a point in the project you can go back to if you find a bug, or want to make a change.
+Que.What does git commit do?
+-Adding commits keep track of our progress and changes as we work. ... Git considers each
+ commit change point or "save point". It is a point in the project you can go back to if
+ you find a bug, or want to make a change.
+------------------------------------------------------------------------------------------
 
--How to puch file to remote repository?
--can you define working directory, staging, repository and remote repository?
-git = It is a software which is distributed version control system based. Version control means saving our works in packages every time we make some changes like every commit. This saves in our repository we have created on github. Git helps us to store our data locally and on online platform. We have every files for each commit (changes) we have made, so if we want to go to previous work its easy to go back. Git minimizes the risk of loosing work. Multiple people can work on same file at same time. Helps to build large projects.
+Que.How to puch file to remote repository?
+-Git PUSH
+The git push command is used to transfer or push the commit, which is made on a local branch
+ in your computer to a remote repository like GitHub. The command used for pushing to GitHub
+ is given below.
+git push 'remote_name' 'branch_name'
+In this tutorial, you'll be looking two different ways to PUSH to GitHub.
+Using Command line to PUSH to GitHub
+1. Creating a new repository.
+    - You need to create a new repository and click on the plus sign.
+    - Fill up all the required details, i.e., repository name, description and also make the
+ repository public this time as it is free.
 
-github-git hub is a platform for saving our repository or git repository hosting servies. Provides web-based graphica interface. It lets you and others works together on projects from anywhere. As everyone can see and suggest changes to our work its helpfull to build a good project and globle thinking.
+2. Open your Git Bash.
+    - Git Bash can be downloaded in here, and it is a shell used to interface with the operating
+ system which follows the UNIX command.
+3. Create your local project in your desktop directed towards a current working directory.
+    - pwd stands for 'print working directory', which is used to print the current directory.
+    - Move to the specific path in your local computer by cd 'path_name'. The cd commands stand
+ for 'change directory' and it is used to change to the working directory in your operating
+ system, and to locate your file, 'path_name', i.e., C:/Users/Dell/Downloads/FaceDetect-master
+ needs to be given. This command can identify the required file that you are looking to work with.
 
-Repository- It is a storage space or the directory we have created for saving our work. It is locally created folder which after push on github distributed to everyone so if it get deleted locally we can able to retrieve it from another online github
 
--Can you draw how documents move from one stage to another?
+4. Initialize the git repository
+    - Use git init to initialize the repository. It is used to create a new empty repository or
+ directory consisting of files' with the hidden directory. '.git' is created at the top level
+ of your project, which places all of the revision information in one place.
 
--How do you initialize a directory to be tracked by Git?
--For an existing project to become a Git repository, navigate into the targeted root directory. Then, run git init . Or, you can create a new repository in a directory in your current path. Use git init <directory> and specify which directory to turn into a Git repository.
+5. Add the file to the new local repository.
+    - Use git add . in your bash to add all the files to the given folder.
+    - Use git status in your bash to view all the files which are going to be staged to the first
+ commit.
+
+
+6. Commit the files staged in your local repository by writing a commit message.
+    - You can create a commit message by git commit -m 'your message', which adds the change
+ to the local repository.
+    - git commit uses '-m' as a flag for a message to set the commits with the content where the full description is included, and a message is written in an imperative sentence up to 50 characters long and defining "what was changed", and "why was the change made".
+
+
+7. Copy your remote repository's URL from GitHub.
+    - The HTTPS or URL is copied from the given GitHub account, which is the place of the remote repository.
+
+8. Add the URL copied, which is your remote repository to where your local content from your repository is pushed.
+    - git remote add origin 'your_url_name'
+    - In the above code, The 'origin' is the remote name, and the remote URL is "https://github.com/Olivia-Smithcoder100/FaceDetection.git". You can see the remote as GitHub in this case, and GitHub provides the URL for adding to the remote repository.
+9. Push the code in your local repository to GitHub
+    - git push -u origin master is used for pushing local content to GitHub.
+    - In the code, the origin is your default remote repository name and '-u' flag is upstream, which is equivalent to '-set-upstream.' and the master is the branch, name.upstream is the repository that we have cloned the project.
+    - Fill in your GitHub username and password.
+
+10. View your files in your repository hosted on GitHub.
+    - You can finally see the file hosted on GitHub.
+------------------------------------------------------------------------------------------
+
+Que.Can you define working directory, staging, repository and remote repository?
+
+Repository- It is a storage space or the directory we have created for saving our work.
+ It is locally created folder which after push on github distributed to everyone so if it
+ get deleted locally we can able to retrieve it from another online github
+
+------------------------------------------------------------------------------------------
+
+Que.Why do you need branching?
+-Essentially creating a timeline of versions of a project as it progresses, so that you can
+ roll back to an earlier version in the event disaster strikes. The way git, and GitHub,
+ manage this timeline — especially when more than one person is working in the project and
+ making changes — is by using branches.
+------------------------------------------------------------------------------------------
+
+Que.Which command is used to create branch?
+-The git branch command can be used to create a new branch. When you want to start a new
+ feature, you create a new branch off main using git branch new_branch. Once created you
+ can then use git checkout new_branch to switch to that branch.
+------------------------------------------------------------------------------------------
+
+Que.What does checkout means?
+-Checkout is the command used to switch between the different branches of a GitHub repository.
+ When a branch is checked out, all files in the working directory are updated to match the
+ versions stored in that branch.
+------------------------------------------------------------------------------------------
+
+Que.How to delete branch?
+-Deleting a branch
+You can have head branches automatically deleted after pull requests are merged in your repository.
+ For more information, see "Managing the automatic deletion of branches."
+Note: If the branch you want to delete is the repository's default branch, you must choose a
+ new default branch before deleting the branch. For more information, see "Changing the default
+ branch."
+If the branch you want to delete is associated with an open pull request, you must merge or
+ close the pull request before deleting the branch. For more information, see "Merging a pull
+ request" or "Closing a pull request."
+    1. On GitHub.com, navigate to the main page of the repository.
+    2. Above the list of files, click  NUMBER branches.
+    3. Scroll to the branch that you want to delete, then click .
+If you delete a head branch after its pull request has been merged, GitHub checks for any
+ open pull requests in the same repository that specify the deleted branch as their base branch.
+ GitHub automatically updates any such pull requests, changing their base branch to the merged
+ pull request's base branch.
+------------------------------------------------------------------------------------------
+
+Que.How do you initialize a directory to be tracked by Git?
+-For an existing project to become a Git repository, navigate into the targeted root directory.
+ Then, run git init . Or, you can create a new repository in a directory in your current path.
+ Use git init <directory> and specify which directory to turn into a Git repository.
