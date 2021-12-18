@@ -1,0 +1,92 @@
+
+    
+       Q. Why should you use Git?
+       Git is a version control distributed system, which allow multiple user accross anywhere iw the world contribute the development of software program where every individual can have work on diffrent parts of project and then can finally merge the project parts to create a one working application.  
+    
+    Q. What is the benefit of distributed version control?
+        distributed version control allows various developer liberty to work independently on a p
+    iece of a project with out worring about the other parts of project, and after finally after
+    completly developing the part they can push it to git branch where the admin can merge the al
+    l modules.
+    
+    
+    Q. What is the command for installing Git on your Linux system?
+    Git packages are available using apt.
+    It's a good idea to make sure you're running the latest version. To do so, Navigate to your command prompt shell and run the following command to make sure everything is up-  to-    date: sudo apt-get update.
+    To install Git, run the following command: sudo apt-get install git-all.
+    Once the command output has completed, you can verify the installation by typing: git version.
+
+    
+    Q. Why should you set up user.name and user.email configuration? How do you set them 	up?
+    Setting Global Git Username and Password
+    The global git username and password are associated with commits on all repositories on your system that don’t have repository-specific values.
+    To set your global commit name and email address run the git config command with the --global option:
+
+    git config --global user.name "Your Name"
+    git config --global user.email "youremail@yourdomain.com"
+    
+    Q. Can you define working directory, staging, repository and remote repository?
+    working directory is a directory in which we are working locally on our system,
+    staging is a step where the files are added for commit where it is not commited yet.
+    while the local directory is pushed on to the git it is called repository stored on the git which can be accessed by anyone on to thier local system,
+    remote repository is the repository which are posted by someone on git, which we can pull to our local system. either by cloning or by pull request
+    
+    Q. Can you draw how documents move from one stage to another?
+    stage 1 documents are in the repository , git is initailized.
+    stage 2 documents are added for staging where we add all files to commit 
+    stage 3 documents are finally commited to push on the git 
+    
+    Q. How do you initialize a directory to be tracked by Git?
+    using git init comamnd
+    
+    Q. What does git status do?
+    git status tells where aer their files which are  unstaged , staged , commited
+    unstaged files are shown in red
+    staged files are shown in green 
+    tree is clean when their is nothing to commit
+    
+    Q. What does git log do?
+    git log shows the various history of commit performed , when from the initial commit performed
+    
+    Q. What does git add do?
+    git add, adds the files to commit on staging state
+    
+    Q. What does git commit do?
+    git commit writes the changes to the document and gives the version to the repository
+    
+    Q. How to push file to remote repository?
+    using git push -b origin master  where master is the branch where i have to push the repo
+    
+    Q. Why do you need branching?
+     it is common for several developers to share and work on the same source code. 
+     While some developers will be fixing bugs, others will be implementing new features, etc. With so much going on, there needs to be a system in place for 
+     managing different versions of the same code base.
+     Branching allows each developer to branch out from the original code base and isolate their work from others. It also helps Git to easily merge versions later on.
+    
+    
+    Q. Which command is used to create branch?
+    he git branch command can be used to create a new branch.
+    
+    Q. What does checkout means?
+    The "checkout" command can switch the currently active branch - but it can also be used to restore files.
+     The most common use case for "checkout" is when you want to switch to a different branch, making it the new HEAD branch.
+    
+    Q. How to delete branch?
+    // delete branch locally
+    git branch -d localBranchName
+
+    // delete branch remotely
+    git push origin --delete remoteBranchName
+    
+    
+    Q. Why we create pull request?
+    Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. 
+    
+    Q. Why we do review?
+    When a developer is ready to merge a branch into the master branch, they can request a merge. ... 
+    Once they are done reviewing, then the changes will be merged into the Master. At this point, 
+    the developer's branch may be deleted. Or they will continue to work in that        branch.
+    
+    Q. When and who merge the pull request?
+      In a pull request, you propose that changes you've made on a head branch should be merged into a base branch.
+  By default, any pull request can be merged at any time, unless the head branch is in conflict with the base branch.
