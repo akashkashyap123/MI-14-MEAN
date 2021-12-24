@@ -1,0 +1,23 @@
+$ git config --global color.ui auto
+ Enables helpful colorization of command line output
+$ git config --global user.email "[email address]"
+ Sets the email you want attached to your commit transactions
+$ git config --global user.name "[name]"
+ Sets the name you want attached to your commit transactions
+
+$ git branch [branch-name]
+ Creats a new branch
+$ git branch -d [branch-name]
+ Deletes the specified branch
+$ git checkout [branch-name]
+ Switches to the specified branch and updates the 
+ working directory.
+$ git merge [branch]
+ Combines the specified branch’s history into the 
+ current branch. This is usually done in pull requests, 
+ but is an important Git operation.
+
+$ git add . 
+ add all files to the staging area.
+$ git commit -m "add your comment"
+$ git push -origin [branch_name]
