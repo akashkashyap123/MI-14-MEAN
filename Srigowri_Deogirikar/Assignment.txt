@@ -1,0 +1,131 @@
+                                                     Assignment 2
+
+What does git status do?
+
+    • The git status command displays the state of the working directory and the staging area. 
+    • It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. 
+    • Status output does not show you any information regarding the committed project history.
+      
+What does git log do?
+    • The git log command shows a list of all the commits made to a repository. 
+    • You can see the hash of each Git commit, the message associated with each commit, and more metadata. 
+    • This command is useful for displaying the history of a repository.
+
+What does git add do?
+    • It adds all modified and new (untracked) files in the current directory and all subdirectories to the staging area (a.k.a. the index), thus preparing them to be included in the next git commit .
+    •  Any files matching the patterns in the . gitignore file will be ignored by git add .
+
+What does git commit do?
+    • The git commit command is used to move files from the staging area to a commit. This command is run after git add, which is used to add files to the staging area.
+    • The git commit creates a snapshot of the changes made to a Git repository which can then be pushed to the main repository when the developer is ready to do so.
+
+How to push file to remote repository?
+
+
+Git PUSH
+The git push command is used to transfer or push the commit, which is made on a local branch in your computer to a remote repository like GitHub. The command used for pushing to GitHub is given below.
+git push 'remote_name' 'branch_name'
+In this tutorial, you'll be looking two different ways to PUSH to GitHub.
+Using Command line to PUSH to GitHub
+1. Creating a new repository.
+    • You need to create a new repository and click on the plus sign.
+    • Fill up all the required details, i.e., repository name, description and also make the repository public this time as it is free.
+
+2. Open your Git Bash.
+    • Git Bash can be downloaded in here, and it is a shell used to interface with the operating system which follows the UNIX command.
+3. Create your local project in your desktop directed towards a current working directory.
+    • pwd stands for 'print working directory', which is used to print the current directory.
+    • Move to the specific path in your local computer by cd 'path_name'. The cd commands stand for 'change directory' and it is used to change to the working directory in your operating system, and to locate your file, 'path_name', i.e., C:/Users/Dell/Downloads/FaceDetect-master needs to be given. This command can identify the required file that you are looking to work with.
+
+
+4. Initialize the git repository
+    • Use git init to initialize the repository. It is used to create a new empty repository or directory consisting of files' with the hidden directory. '.git' is created at the top level of your project, which places all of the revision information in one place.
+
+5. Add the file to the new local repository.
+    • Use git add . in your bash to add all the files to the given folder.
+    • Use git status in your bash to view all the files which are going to be staged to the first commit.
+
+
+6. Commit the files staged in your local repository by writing a commit message.
+    • You can create a commit message by git commit -m 'your message', which adds the change to the local repository.
+    • git commit uses '-m' as a flag for a message to set the commits with the content where the full description is included, and a message is written in an imperative sentence up to 50 characters long and defining "what was changed", and "why was the change made".
+
+
+7. Copy your remote repository's URL from GitHub.
+    • The HTTPS or URL is copied from the given GitHub account, which is the place of the remote repository.
+
+8. Add the URL copied, which is your remote repository to where your local content from your repository is pushed.
+    • git remote add origin 'your_url_name'
+    • In the above code, The 'origin' is the remote name, and the remote URL is "https://github.com/Olivia-Smithcoder100/FaceDetection.git". You can see the remote as GitHub in this case, and GitHub provides the URL for adding to the remote repository.
+9. Push the code in your local repository to GitHub
+    • git push -u origin master is used for pushing local content to GitHub.
+    • In the code, the origin is your default remote repository name and '-u' flag is upstream, which is equivalent to '-set-upstream.' and the master is the branch, name.upstream is the repository that we have cloned the project.
+    • Fill in your GitHub username and password.
+
+10. View your files in your repository hosted on GitHub.
+    • You can finally see the file hosted on GitHub.
+
+Using GitHub Desktop to PUSH to your local content to GitHub.
+GitHub Desktop is available to download for any operating system, and it gives the GUI(Graphical User Interface) platform to push your local content from your local repository to a remote repository like GitHub.
+You need to open your GitHub account in your browser and the process of creating a new repository, i.e., step 1 is the same as mentioned above in "Using Command line to PUSH to GitHub".
+1. Click "Set up in a Desktop".
+    • You need to click on the button, as shown below where a pop up comes, and you click on "Open GitHub desktop".
+
+2. Cloning in a GitHub Desktop.
+    • You can click the "Clone" button, as shown below.
+After cloning a new clone, the folder is created in your local computer where a hidden directory ".git" is also present.
+3. Copy all the required files from your local computer into the clone folder on your computer.
+    • You need to copy all the required files, images, README files, etc., to the clone folder.
+
+4. Move to GitHub Desktop and commit to master
+    • You can see the files that are added into the clone folder are seen in GitHub Desktop too. Finally, write your message and push "Commit to master".
+
+
+5. Publish branch in GitHub Desktop to upload your all files to GitHub.
+    • You can click on "Publish Branch" to publish your all local content to GitHub.
+
+
+You can view your repository in GitHub after you have completed all steps.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Why do you need branching?
+
+    • Essentially creating a timeline of versions of a project as it progresses, so that you can roll back to an earlier version in the event disaster strikes. 
+    • The way git, and GitHub, manage this timeline — especially when more than one person is working in the project and making changes — is by using branches.
+
+
+Which command is used to create branch?
+
+    • The git branch command can be used to create a new branch. When you want to start a new feature, you create a new branch off main using git branch new_branch . 
+    • Once created you can then use git checkout new_branch to switch to that branch.
+
+What does checkout means?
+
+    • Checkout is the command used to switch between the different branches of a GitHub repository. 
+    • When a branch is checked out, all files in the working directory are updated to match the versions stored in that branch.
+
+How to delete branch?
+Deleting a branch
+You can have head branches automatically deleted after pull requests are merged in your repository. For more information, see "Managing the automatic deletion of branches."
+Note: If the branch you want to delete is the repository's default branch, you must choose a new default branch before deleting the branch. For more information, see "Changing the default branch."
+If the branch you want to delete is associated with an open pull request, you must merge or close the pull request before deleting the branch. For more information, see "Merging a pull request" or "Closing a pull request."
+    1. On GitHub.com, navigate to the main page of the repository.
+    2. Above the list of files, click  NUMBER branches.
+    3. Scroll to the branch that you want to delete, then click .
+If you delete a head branch after its pull request has been merged, GitHub checks for any open pull requests in the same repository that specify the deleted branch as their base branch. GitHub automatically updates any such pull requests, changing their base branch to the merged pull request's base branch. 
+
