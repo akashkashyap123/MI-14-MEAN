@@ -28,11 +28,11 @@ Linux
 Git packages are available using apt.
 It's a good idea to make sure you're running the latest version. To do so, Navigate to your command
 prompt shell and run the following command to make sure everything is up-to-date: sudo apt-get update.
-To install Git, run the following command: sudo apt-get install git-all.
+To install Git, run the following command: sudo apt-get install git.
 Once the command output has completed, you can verify the installation by typing: git version.
 Fedora
 Git packages are available using dnf.
-To install Git, navigate to your command prompt shell and run the following command: sudo dnf install git-all.
+To install Git, navigate to your command prompt shell and run the following command: sudo dnf install git.
 Once the command output has completed, you can verify the installation by typing: git version.
 ------------------------------------------------------------------------------------------
 
