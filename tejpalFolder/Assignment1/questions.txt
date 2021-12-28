@@ -52,8 +52,8 @@ will either be based on your computer username or only your DVCS username.
 
 add git user and email:
 
-git config --global user.email "my.adresse@hotmail.com"
-git config --global user.name "My Name"
+$git config --global user.email "email"
+$git config --global user.name "name"
 ------------------------------------------------------------------------------------------
 
 Que. Can you define working directory, staging, repository and remote repository?
