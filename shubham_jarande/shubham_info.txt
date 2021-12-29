@@ -1,0 +1,14 @@
+name: shubham ramesh jarande
+
+education:BCA
+
+address: Hingoli
+
+//git clone"https://github.com/jarandeshubham/Mi-14-mean-demo.git"
+
+E:
+
+cd Mi-14-mean-demo
+
+
+
